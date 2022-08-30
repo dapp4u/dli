@@ -1,0 +1,207 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head><meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>ETHERA•UK</title>
+  <!-- Tell the browser to be responsive to screen width -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="plugins/fontawesome-free/css/all.min.css">
+  <!-- Ionicons -->
+  <link rel="stylesheet" href="../code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+  <!-- Tempusdominus Bbootstrap 4 -->
+  <link rel="stylesheet" href="plugins/tempusdominus-bootstrap-4/css/tempusdominus-bootstrap-4.min.css">
+  <!-- iCheck -->
+  <link rel="stylesheet" href="plugins/icheck-bootstrap/icheck-bootstrap.min.css">
+  <!-- JQVMap -->
+  <link rel="stylesheet" href="plugins/jqvmap/jqvmap.min.html">
+  <!-- Theme style -->
+  <link rel="stylesheet" href="dist/css/adminlte.min.css">
+  <!-- overlayScrollbars -->
+  <link rel="stylesheet" href="plugins/overlayScrollbars/css/OverlayScrollbars.min.html">
+  <!-- Daterange picker -->
+  <link rel="stylesheet" href="plugins/daterangepicker/daterangepicker.html">
+  <!-- summernote -->
+  <link rel="stylesheet" href="plugins/summernote/summernote-bs4.html">
+  <!-- Google Font: Source Sans Pro -->
+  <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700" rel="stylesheet">
+</head>
+<body class="hold-transition sidebar-mini layout-fixed">
+<div class="wrapper">
+
+  <!-- Navbar -->
+  <nav class="main-header navbar navbar-expand navbar-dark navbar-light">
+    <!-- Left navbar links -->
+    <ul class="navbar-nav">
+      <li class="nav-item">
+        <a class="nav-link" data-widget="pushmenu" href="#"><i class="fas fa-bars"></i></a>
+      </li>
+       
+           <li class="nav-item d-none d-sm-inline-block">
+        <a href="dashboard.html" class="nav-link">Home</a>
+      </li>
+       <li class="nav-item d-none d-sm-inline-block">
+        <a href="mypartners.html" class="nav-link">Partners</a>
+      </li>
+      <li class="nav-item d-none d-sm-inline-block">
+        <a href="uplines.html" class="nav-link">Uplines</a>
+      </li>
+      <li class="nav-item d-none d-sm-inline-block">
+        <a href="lost-profits.html" class="nav-link">Lost Profit</a>
+      </li>
+    
+     
+    </ul>
+  </nav>
+  <!-- /.navbar -->
+
+  <!-- Main Sidebar Container -->
+  <aside class="main-sidebar sidebar-dark-primary elevation-4">
+    <!-- Brand Logo -->
+    <a href="dashboard.html" class="brand-link">
+      <img src="dist/img/AdminLTELogo.png" alt="AdminLTE Logo" class="brand-image img-circle elevation-3"
+           style="opacity: .8">
+      <span class="brand-text font-weight-light">ETHERA•UK</span>
+    </a>
+
+    <!-- Sidebar -->
+    <div class="sidebar">
+      <br>
+      <!-- Sidebar Menu -->
+      <nav class="mt-2">
+        <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
+          <!-- Add icons to the links using the .nav-icon class
+               with font-awesome or any other icon font library -->
+          <li class="nav-item">
+            <a href="dashboard.html" class="nav-link ">
+              <i class="nav-icon fas fa-tachometer-alt"></i>
+              <p>
+                Control Panel
+              </p>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="mypartners.html" class="nav-link">
+              <i class="nav-icon fas fa-users"></i>
+              <p>
+                Partners
+              </p>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="uplines.html" class="nav-link">
+              <i class="nav-icon fas fa-th"></i>
+              <p>
+                Uplines
+              </p>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="lost-profits.html" class="nav-link active">
+              <i class="nav-icon fas fa-chart-pie"></i>
+              <p>
+                Lost Profits
+              </p>
+            </a>
+          </li>
+        </ul>
+      </nav>
+      <!-- /.sidebar-menu -->
+    </div>
+    <!-- /.sidebar -->
+  </aside>
+
+  <!-- Content Wrapper. Contains page content -->
+  <div class="content-wrapper">
+    <!-- Content Header (Page header) -->
+    <div class="content-header">
+      <div class="container-fluid">
+        <div class="row mb-2">
+          <div class="col-sm-6">
+            <h1 class="m-0 text-dark">Lost Profits</h1>
+          </div><!-- /.col -->
+          <div class="col-sm-6">
+              <ol class="breadcrumb float-sm-right">
+                  <li class="breadcrumb-item"><a href="#">Home</a></li>
+                  <li class="breadcrumb-item active">Dashboard v1</li>
+                  <li>
+                      <div class="float-sm-right" id="google_translate_element" style="width:120px;display: inline-block;margin-right:10px;"></div>
+
+                      <script type="text/javascript">
+                          function googleTranslateElementInit() {
+                              new google.translate.TranslateElement({ pageLanguage: 'en' }, 'google_translate_element');
+                          }
+                      </script>
+
+                      <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+                  </li>
+              </ol>
+          </div><!-- /.col -->
+        </div><!-- /.row -->
+      </div><!-- /.container-fluid -->
+    </div>
+    <!-- /.content-header -->
+
+    <!-- Main content -->
+    <section class="content">
+        <div class="container-fluid">
+            <div class="row mb-2">
+                <a class="nav-link" id="lblLoggedInAddr"></a>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="card">
+                        <div class="card-header">
+                            <h3 class="card-title">Lost Profits</h3>
+                        </div>
+                        <!-- /.card-header -->
+                        <div class="card-body p-0">
+                            <table id="tbl" class="table table-striped" style="display:none">
+                                <thead>
+                                    <tr>
+                                        <th>Address</th>
+                                        <th>ID</th>
+                                        <th>Amount</th>
+                                        <th>Level</th>
+                                    </tr>
+                                </thead>
+                                <tbody></tbody>
+                            </table>
+                        </div>
+                        <!-- /.card-body -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- /.content -->
+  </div>
+  <!-- /.content-wrapper -->
+
+  <footer class="main-footer">
+    <strong>Copyright &copy; 2020 ETHERA•UK.</strong>
+    All rights reserved.
+    <div class="float-right d-none d-sm-inline-block">
+      <b>Version</b> 3.0.1
+    </div>
+  </footer>
+
+  <!-- Control Sidebar -->
+  <aside class="control-sidebar control-sidebar-dark">
+    <!-- Control sidebar content goes here -->
+  </aside>
+  <!-- /.control-sidebar -->
+</div>
+<!-- ./wrapper -->
+
+
+<script src="jquery-3.1.0.js" type="text/javascript"></script>
+<script src="web3.js"></script>
+<script>
+var _0x188b=['contract','error','log','uplinesToRcvEth','levelPrice','uid','getUserProfitsGivenToLine','view','abi','text','mainnet.infura.io/v3/0cc12d23487546cf996cc3e378fa5a8f','providers','RegisterUserEvent','<td>','getUserLevel','getUserProfitsAmount','function','registerUser','givenProfits','getUserLostsToAddr','name','toString','getUserProfitsGivenToLevel','time','address','referral','#tbl\x20tr:last','getUserLostsToId','fromWei','userAddresses','getUserProfitsGivenToAddr','getUserLostsAmount','</tr>','getUserProfitsGivenToId','type','stateMutability','HttpProvider','uint256[]','user','after','accounts','_level','lostProfits','constant','_user','length','payable','address[]','getUserProfitsGivenToAmount','#lblLoggedInAddr','referrer','getUserDetails','inputs','indexed','getlastuid','level','<tr>','undefined','buyLevel','getUserProfitsFromId','getUserLostsLevel','</td>','users','getUserProfitsFromAddr','eth','event','LostLevelProfitEvent','nonpayable','last_uid','anonymous','uint256','rcvdProfits','getUserLevelExpiresAt','currentProvider','outputs','findReferrer'];(function(_0x483c3f,_0x5de96d){var _0x34465a=function(_0x23443a){while(--_0x23443a){_0x483c3f['push'](_0x483c3f['shift']());}};_0x34465a(++_0x5de96d);}(_0x188b,0xad));var _0x4c08=function(_0x483c3f,_0x5de96d){_0x483c3f=_0x483c3f-0x0;var _0x34465a=_0x188b[_0x483c3f];return _0x34465a;};$(function(){const _0x1ffc2a='0xe4edd17c622c06bf67487d606e77812b838da17e';const _0x50ec72=_0x4c08('0x41');var _0x1cf410;const _0x19a900={'abi':[{'constant':!![],'inputs':[],'name':'creator','outputs':[{'name':'','type':_0x4c08('0x3')}],'payable':![],'stateMutability':'view','type':_0x4c08('0x47')},{'constant':![],'inputs':[{'name':'_referrerID','type':_0x4c08('0x31')}],'name':_0x4c08('0x48'),'outputs':[],'payable':!![],'stateMutability':_0x4c08('0x19'),'type':_0x4c08('0x47')},{'constant':!![],'inputs':[{'name':'a','type':_0x4c08('0x31')}],'name':_0x4c08('0x21'),'outputs':[{'name':'','type':'uint256'}],'payable':![],'stateMutability':_0x4c08('0x3e'),'type':_0x4c08('0x47')},{'constant':!![],'inputs':[{'name':_0x4c08('0x17'),'type':_0x4c08('0x3')}],'name':_0x4c08('0x45'),'outputs':[{'name':'','type':'uint256'}],'payable':![],'stateMutability':_0x4c08('0x3e'),'type':'function'},{'constant':!![],'inputs':[{'name':_0x4c08('0x17'),'type':_0x4c08('0x3')}],'name':_0x4c08('0x3d'),'outputs':[{'name':'','type':'uint256[]'}],'payable':![],'stateMutability':_0x4c08('0x3e'),'type':'function'},{'constant':!![],'inputs':[{'name':_0x4c08('0x17'),'type':'address'}],'name':_0x4c08('0xa'),'outputs':[{'name':'','type':_0x4c08('0x10')}],'payable':![],'stateMutability':_0x4c08('0x3e'),'type':_0x4c08('0x47')},{'constant':!![],'inputs':[{'name':'','type':'address'}],'name':_0x4c08('0x15'),'outputs':[{'name':_0x4c08('0x3c'),'type':'uint256'}],'payable':![],'stateMutability':_0x4c08('0x3e'),'type':'function'},{'constant':!![],'inputs':[{'name':'_user','type':_0x4c08('0x3')}],'name':_0x4c08('0x2a'),'outputs':[{'name':'','type':_0x4c08('0x1a')}],'payable':![],'stateMutability':_0x4c08('0x3e'),'type':_0x4c08('0x47')},{'constant':!![],'inputs':[{'name':_0x4c08('0x17'),'type':_0x4c08('0x3')}],'name':_0x4c08('0x4a'),'outputs':[{'name':'','type':'address[]'}],'payable':![],'stateMutability':_0x4c08('0x3e'),'type':_0x4c08('0x47')},{'constant':!![],'inputs':[{'name':'','type':'uint256'}],'name':_0x4c08('0x8'),'outputs':[{'name':'','type':_0x4c08('0x3')}],'payable':![],'stateMutability':'view','type':'function'},{'constant':!![],'inputs':[{'name':_0x4c08('0x17'),'type':_0x4c08('0x3')},{'name':'_level','type':_0x4c08('0x31')}],'name':_0x4c08('0x33'),'outputs':[{'name':'','type':_0x4c08('0x31')}],'payable':![],'stateMutability':_0x4c08('0x3e'),'type':_0x4c08('0x47')},{'constant':!![],'inputs':[{'name':_0x4c08('0x17'),'type':_0x4c08('0x3')}],'name':'getUserReferrals','outputs':[{'name':'','type':_0x4c08('0x1a')}],'payable':![],'stateMutability':_0x4c08('0x3e'),'type':_0x4c08('0x47')},{'constant':!![],'inputs':[{'name':'_user','type':_0x4c08('0x3')}],'name':_0x4c08('0x6'),'outputs':[{'name':'','type':'uint256[]'}],'payable':![],'stateMutability':_0x4c08('0x3e'),'type':_0x4c08('0x47')},{'constant':!![],'inputs':[{'name':_0x4c08('0x17'),'type':_0x4c08('0x3')}],'name':_0x4c08('0x1'),'outputs':[{'name':'','type':_0x4c08('0x10')}],'payable':![],'stateMutability':_0x4c08('0x3e'),'type':_0x4c08('0x47')},{'constant':!![],'inputs':[{'name':'','type':_0x4c08('0x3')}],'name':_0x4c08('0x49'),'outputs':[{'name':_0x4c08('0x3c'),'type':_0x4c08('0x31')}],'payable':![],'stateMutability':_0x4c08('0x3e'),'type':'function'},{'constant':!![],'inputs':[{'name':'_user','type':_0x4c08('0x3')}],'name':_0x4c08('0x26'),'outputs':[{'name':'','type':_0x4c08('0x10')}],'payable':![],'stateMutability':_0x4c08('0x3e'),'type':_0x4c08('0x47')},{'constant':!![],'inputs':[{'name':_0x4c08('0x17'),'type':_0x4c08('0x3')}],'name':_0x4c08('0x1b'),'outputs':[{'name':'','type':'uint256[]'}],'payable':![],'stateMutability':'view','type':'function'},{'constant':!![],'inputs':[{'name':'','type':_0x4c08('0x3')}],'name':_0x4c08('0x29'),'outputs':[{'name':'id','type':'uint256'},{'name':'referrerID','type':_0x4c08('0x31')}],'payable':![],'stateMutability':_0x4c08('0x3e'),'type':_0x4c08('0x47')},{'constant':!![],'inputs':[{'name':'','type':'uint256'}],'name':_0x4c08('0x3b'),'outputs':[{'name':'','type':'uint256'}],'payable':![],'stateMutability':_0x4c08('0x3e'),'type':_0x4c08('0x47')},{'constant':!![],'inputs':[{'name':_0x4c08('0x17'),'type':_0x4c08('0x3')}],'name':_0x4c08('0x27'),'outputs':[{'name':'','type':_0x4c08('0x10')}],'payable':![],'stateMutability':_0x4c08('0x3e'),'type':_0x4c08('0x47')},{'constant':!![],'inputs':[{'name':_0x4c08('0x17'),'type':_0x4c08('0x3')}],'name':_0x4c08('0x36'),'outputs':[{'name':'','type':'address'}],'payable':![],'stateMutability':'view','type':_0x4c08('0x47')},{'constant':!![],'inputs':[{'name':'_user','type':_0x4c08('0x3')}],'name':_0x4c08('0x1e'),'outputs':[{'name':'','type':'uint256'},{'name':'','type':_0x4c08('0x31')}],'payable':![],'stateMutability':_0x4c08('0x3e'),'type':_0x4c08('0x47')},{'constant':!![],'inputs':[{'name':_0x4c08('0x17'),'type':_0x4c08('0x3')},{'name':'height','type':_0x4c08('0x31')}],'name':'getUserUpline','outputs':[{'name':'','type':_0x4c08('0x3')}],'payable':![],'stateMutability':_0x4c08('0x3e'),'type':_0x4c08('0x47')},{'constant':!![],'inputs':[{'name':_0x4c08('0x17'),'type':_0x4c08('0x3')}],'name':_0x4c08('0xc'),'outputs':[{'name':'','type':_0x4c08('0x10')}],'payable':![],'stateMutability':'view','type':_0x4c08('0x47')},{'constant':!![],'inputs':[{'name':_0x4c08('0x17'),'type':_0x4c08('0x3')}],'name':_0x4c08('0x46'),'outputs':[{'name':'','type':_0x4c08('0x10')}],'payable':![],'stateMutability':_0x4c08('0x3e'),'type':_0x4c08('0x47')},{'constant':!![],'inputs':[],'name':_0x4c08('0x2f'),'outputs':[{'name':'','type':_0x4c08('0x31')}],'payable':![],'stateMutability':_0x4c08('0x3e'),'type':_0x4c08('0x47')},{'constant':!![],'inputs':[{'name':_0x4c08('0x17'),'type':_0x4c08('0x3')}],'name':_0x4c08('0x9'),'outputs':[{'name':'','type':_0x4c08('0x1a')}],'payable':![],'stateMutability':_0x4c08('0x3e'),'type':'function'},{'constant':!![],'inputs':[{'name':'','type':_0x4c08('0x31')}],'name':_0x4c08('0x3a'),'outputs':[{'name':'','type':_0x4c08('0x31')}],'payable':![],'stateMutability':_0x4c08('0x3e'),'type':_0x4c08('0x47')},{'constant':!![],'inputs':[{'name':'','type':_0x4c08('0x3')}],'name':_0x4c08('0x32'),'outputs':[{'name':_0x4c08('0x3c'),'type':'uint256'}],'payable':![],'stateMutability':_0x4c08('0x3e'),'type':_0x4c08('0x47')},{'constant':![],'inputs':[{'name':_0x4c08('0x14'),'type':_0x4c08('0x31')}],'name':_0x4c08('0x25'),'outputs':[],'payable':!![],'stateMutability':_0x4c08('0x19'),'type':_0x4c08('0x47')},{'inputs':[],'payable':![],'stateMutability':_0x4c08('0x2e'),'type':'constructor'},{'payable':!![],'stateMutability':_0x4c08('0x19'),'type':'fallback'},{'anonymous':![],'inputs':[{'indexed':!![],'name':_0x4c08('0x11'),'type':'address'},{'indexed':!![],'name':_0x4c08('0x1d'),'type':_0x4c08('0x3')},{'indexed':![],'name':'time','type':_0x4c08('0x31')}],'name':_0x4c08('0x43'),'type':'event'},{'anonymous':![],'inputs':[{'indexed':!![],'name':'user','type':_0x4c08('0x3')},{'indexed':!![],'name':_0x4c08('0x22'),'type':_0x4c08('0x31')},{'indexed':![],'name':_0x4c08('0x2'),'type':'uint256'}],'name':'BuyLevelEvent','type':'event'},{'anonymous':![],'inputs':[{'indexed':!![],'name':_0x4c08('0x11'),'type':_0x4c08('0x3')},{'indexed':!![],'name':_0x4c08('0x4'),'type':_0x4c08('0x3')},{'indexed':!![],'name':_0x4c08('0x22'),'type':_0x4c08('0x31')},{'indexed':![],'name':_0x4c08('0x2'),'type':_0x4c08('0x31')}],'name':'GetLevelProfitEvent','type':'event'},{'anonymous':![],'inputs':[{'indexed':!![],'name':_0x4c08('0x11'),'type':_0x4c08('0x3')},{'indexed':!![],'name':_0x4c08('0x4'),'type':_0x4c08('0x3')},{'indexed':!![],'name':_0x4c08('0x22'),'type':_0x4c08('0x31')},{'indexed':![],'name':'time','type':_0x4c08('0x31')}],'name':_0x4c08('0x2d'),'type':_0x4c08('0x2c')}]};var _0x3e968e,_0x475e7a,_0x4e5247,_0x3c1926,_0x48bf0e;_0x228197();function _0x228197(){if(typeof web3!==_0x4c08('0x24')){web3=new Web3(web3[_0x4c08('0x34')]);}else{web3=new Web3(new Web3[(_0x4c08('0x42'))][(_0x4c08('0xf'))](_0x50ec72));}var _0x168046=web3['eth'][_0x4c08('0x37')](_0x19a900[_0x4c08('0x3f')]);var _0x39c013=_0x168046['at'](_0x1ffc2a);$(_0x4c08('0x1c'))[_0x4c08('0x40')](web3[_0x4c08('0x2b')][_0x4c08('0x13')][0x0]);_0x39c013[_0x4c08('0x6')](web3[_0x4c08('0x2b')][_0x4c08('0x13')][0x0],function(_0x287323,_0x46b40c){if(!_0x287323){_0x3e968e=_0x46b40c;console[_0x4c08('0x39')](_0x46b40c);}else console[_0x4c08('0x38')](_0x287323);});_0x39c013[_0x4c08('0x4a')](web3[_0x4c08('0x2b')][_0x4c08('0x13')][0x0],function(_0x42c252,_0x5c36ab){if(!_0x42c252){_0x475e7a=_0x5c36ab;console[_0x4c08('0x39')](_0x5c36ab);}else console[_0x4c08('0x38')](_0x42c252);});_0x39c013[_0x4c08('0xa')](web3[_0x4c08('0x2b')][_0x4c08('0x13')][0x0],function(_0x232371,_0xb3a716){if(!_0x232371){_0x4e5247=_0xb3a716;console[_0x4c08('0x39')](_0xb3a716);}else console[_0x4c08('0x38')](_0x232371);});_0x39c013[_0x4c08('0x27')](web3[_0x4c08('0x2b')]['accounts'][0x0],function(_0x3c1569,_0x5ef33e){if(!_0x3c1569){_0x3c1926=_0x5ef33e;let _0x418fa1;for(var _0x371691=0x0;_0x371691<_0x3c1926[_0x4c08('0x18')];_0x371691++){$(_0x4c08('0x5'))[_0x4c08('0x12')](_0x4c08('0x23')+_0x4c08('0x44')+_0x475e7a[_0x371691]+_0x4c08('0x28')+_0x4c08('0x44')+_0x3e968e[_0x371691]+_0x4c08('0x28')+_0x4c08('0x44')+web3[_0x4c08('0x7')](_0x4e5247[_0x371691][_0x4c08('0x0')](0xa))+_0x4c08('0x28')+_0x4c08('0x44')+_0x3c1926[_0x371691]+_0x4c08('0x28')+_0x4c08('0xb'));_0x418fa1=_0x475e7a[_0x371691];}console[_0x4c08('0x39')](_0x5ef33e);}else console[_0x4c08('0x38')](_0x3c1569);});}});
+</script>
+
+</body>
+</html>
