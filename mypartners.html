@@ -135,6 +135,7 @@
                                     </div>
                                     <div>
                                         <label id="lblRef"></label>
+                                        <button id="btnCopy" style="display: none;">Copy Referral Link</button>
                                         </div>
                                     <!-- <button id="btnActRef" class="btn btn-warning" onclick="return activateRef()" style="display:none">Activate Referral</button>
                                     <button id="btnRef" class="btn btn-success" style="display:none">Referral Link Already Activated</button> -->
@@ -186,6 +187,9 @@
             }
             setTimeout(crlink, 0000);
 
+            $("#btnCopy").click(function (e) {
+              copyToClipboard($("#refLink2").text().trim());
+            });
 
         });
         const checkref = async () => {
@@ -199,6 +203,15 @@
                 $("#refLink2").val("https://dapp4u.github.io/dli/?ref="+myJson);
                 $("#refLink2").show();
                 $("#lblRef").html("");
+                $("#btnCopy").show();
             }
-        }      
+        }  
+        
+        function copyToClipboard(text_val) {
+        var $temp = $("<input>");
+        $("body").append($temp);
+        $temp.val(text_val).select();
+        document.execCommand("copy");
+        $temp.remove();
+        }
     </script>

@@ -99,23 +99,22 @@
                             <div style="display:none">
                                 <input id="txtReferrerID" type="text" name="amount" placeholder="Enter Referrer ID">
                             </div>  
-                            <div>
-                                <label id="lblRefMsg" style="color: red;"></label>
-                            </div>                          <br>
-                            <button id="btnSave" style="display: none" class="tm-btn tm-style1 w-100" type="submit">BUY NOW</button>
+                            <div style="margin:0 auto;">
+                                <label id="lblRefMsg" style="color:aqua;"></label>
+                            </div>                         
+                             <br>
+                            <button id="btnSave" style="display: none" class="tm-btn tm-style1 w-100" type="submit">REGISTER</button>
                             <br>
                             <br>
 
                             <span id="refLink" style="color: green; font-weight: bold; text-align: center;display:none"></span>
                             <!-- <button id="btnGetUpline"  class="tm-btn tm-style1 w-100">Get Upline</button> -->
-
                             <p>
                                 <ul style="color:#fff;padding-top:10px;">
                                     <li>It is working with Metamask (PC Users) and TokenPocket Wallet (Mobile Users) </li>
                                 </ul>
-
                             </p>
-                            <a class="tm-btn  w-100 btn-default" style="background-color: #979696" href="https://dapp4u.biz/MyAccount/Dashboard">Back</a>
+                            <a class="tm-btn  w-100 btn-default" style="background-color: #979696" href="dashboard.html">VIEW DASHBOARD</a>
                         </div><!-- .tm-modal -->
                     </form>
                 </div>
@@ -201,7 +200,7 @@
             }
             else{
                 $("#lblRefMsg").html("Referral link not found.");
-                    $("#btnSave").hide();
+                $("#btnSave").hide();
             }
            
         }
