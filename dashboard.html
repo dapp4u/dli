@@ -168,11 +168,28 @@
                         <div class="col-md-12 " style="padding-bottom:10px">
                             <a class="btn btn-success" href="mypartners.html" 
                             style="background-color: #008282; border: 1px solid #008282;">
-                                View Referral Link
+                                View Referral Link and Downline
                             </a>
 
                         </div>
 
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12"> 
+                            <div style="background: aquamarine;font-family: Verdana, Geneva, Tahoma, sans-serif;
+                            color: red;
+                            font-weight: bold;
+                            padding: 4px 15px;
+                            margin-bottom: 10px;
+                            text-align: center;">
+                          !! ATTENTION DEAR MEMBERS !! <BR/>
+                    Click on buy button only once, Kindly please confirm the transactions only once. <br/>
+                    After doing so just wait it will automatically redirect you to dashboard.<br/>
+                    Have some little patience, Instead of doing it faster.
+                    Doing faster may give loss only.<br/> 
+                    Team Dapp4U
+                            </div>
+                        </div>
                     </div>
                     <div class="row row">
                         <div class="col-md-12">
@@ -193,7 +210,7 @@
                                 </div>
                                 <div class="card-body">
                                     <h3 class="level-price">5 MATIC</h3>
-                                    <button type="button" id="btnBuyLevel1" class="btn btn-block btn-primary btnBuyLevel">Buy</button>
+                                    <button type="button" style="display: none;" id="btnBuyLevel1" class="btn btn-block btn-primary btnBuyLevel">Buy</button>
                                     <button type="button" id="btnRestoreLevel1" class="btn btn-block btn-primary hide">Restore</button>
                                     <button type="button" id="btnExtendLevel1" class="btn btn-block btn-default btnExtendLevel hide">Extend</button>
                                 </div>
@@ -346,6 +363,13 @@
                 $("#tm-preloader").hide();
             }
             setTimeout(crlink, 2000);
+
+            $(document).ready(function () {
+                    $(".btnBuyLevel").click(function(){
+                        $(this).text("Please wait..");
+                        $(this).attr("disabled","disabled");
+                    })        
+            });
           
         </script>
 
@@ -353,3 +377,6 @@
 </body>
 
 </html>
+
+
+
