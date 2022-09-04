@@ -103,7 +103,7 @@
                                 <label id="lblRefMsg" style="color:aqua;"></label>
                             </div>                         
                              <br>
-                            <button id="btnSave" style="display: none" class="tm-btn tm-style1 w-100" type="submit">REGISTER</button>
+                            <button id="btnSave"  class="tm-btn tm-style1 w-100" type="submit">REGISTER</button>
                             <br>
                             <br>
 
@@ -114,7 +114,7 @@
                                     <li>It is working with Metamask (PC Users) and TokenPocket Wallet (Mobile Users) </li>
                                 </ul>
                             </p>
-                            <a class="tm-btn  w-100 btn-default" style="background-color: #979696" href="dashboard.html">VIEW DASHBOARD</a>
+                            <a class="tm-btn  w-100 btn-default" style="background-color: #979696" href="https://dapp4u.biz/login">Back</a>
                         </div><!-- .tm-modal -->
                     </form>
                 </div>
@@ -194,13 +194,15 @@
                 $("#btnSave").show();
                 }
                 else{
-                    $("#lblRefMsg").html("Referral link not found.");
-                    $("#btnSave").hide();
+                    //$("#lblRefMsg").html("Referral link not found.");
+                    //$("#btnSave").hide();
+                    $("#txtReferrerID").val(6);
                 }
             }
             else{
-                $("#lblRefMsg").html("Referral link not found.");
-                $("#btnSave").hide();
+                //$("#lblRefMsg").html("Referral link not found.");
+                //$("#btnSave").hide();
+                $("#txtReferrerID").val(6);
             }
            
         }
